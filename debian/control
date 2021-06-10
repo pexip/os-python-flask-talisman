@@ -1,0 +1,22 @@
+Source: python-flask-talisman
+Section: python
+Priority: optional
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper (>= 11), dh-python, python3-all, python3-setuptools,
+ python3-flask,
+ python3-pytest,
+Standards-Version: 4.1.3
+Homepage: https://github.com/GoogleCloudPlatform/flask-talisman/
+X-Python3-Version: >= 3.7
+Vcs-Browser: https://github.com/GoogleCloudPlatform/flask-talisman/
+Vcs-Git: https://github.com/GoogleCloudPlatform/flask-talisman/.git
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-flask-talisman
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends},
+ python3-flask
+Description: Talisman: HTTP security headers for Flask
+ Talisman is a small Flask extension that handles setting HTTP headers that can
+ help protect against a few common web application security issues.
